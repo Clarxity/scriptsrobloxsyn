@@ -1,0 +1,20 @@
+local Player = game.Players.LocalPlayer
+local UserInputService = game:GetService("UserInputService")
+
+UserInputService.TextBoxFocused:Connect(function(TextBox)
+	if TextBox.Name == "ChatBar" then
+		while wait() do
+			if UserInputService.TextBoxFocused then
+				if TextBox.Text == "clip" then
+					TextBox.Text = "bru"
+				elseif TextBox.Text == "ban" then
+					TextBox.Text = "die"
+				elseif TextBox.Text == "exploit" then
+					TextBox.Text = "mutt"
+		        elseif TextBox.Text == "ez ban" then
+					TextBox.Text = "actual weirdo"
+				end
+			end
+		end
+	end
+end)
