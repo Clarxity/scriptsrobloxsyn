@@ -5,11 +5,11 @@ UserInputService.TextBoxFocused:Connect(function(TextBox)
 	if TextBox.Name == "ChatBar" then
 		while wait() do
 			if UserInputService.TextBoxFocused then
-				if TextBox.Text == "clip" then
+				if TextBox.Text == "clipped" then
 					TextBox.Text = "bru"
-				elseif TextBox.Text == "ban" then
+				elseif TextBox.Text == "banned" then
 					TextBox.Text = "die"
-				elseif TextBox.Text == "exploit" then
+				elseif TextBox.Text == "exploiter" then
 					TextBox.Text = "mutt"
 		        elseif TextBox.Text == "ez ban" then
 					TextBox.Text = "actual weirdo"
